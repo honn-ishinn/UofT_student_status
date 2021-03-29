@@ -1,4 +1,4 @@
-# Toronto Robbery Victims
+# UofT student status
 
 This repo contains a shiny app visualizing student status (international vs domestic) of University of Toronto from 2012 to 2019 
 
