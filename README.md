@@ -1,2 +1,10 @@
-# UofT_student_status
-Shiny App for visualizing the UofT student status headcount from 2012 to 2019
+# Toronto Robbery Victims
+
+This repo contains a shiny app visualizing student status (international vs domestic) of University of Toronto from 2012 to 2019 
+
+
+It is organized as follows:
+
+The "scripts" folder contains R codes drafting the visualization.
+
+The "image" folder contains image of the visualizations.

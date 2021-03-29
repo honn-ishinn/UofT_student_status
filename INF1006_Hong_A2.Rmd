@@ -1,0 +1,41 @@
+---
+title: "INF1006 Assignment #2: Data Visualization"
+author: "Hong Shi"
+date: "3/22/2021"
+output:
+  bookdown::pdf_document2:
+toc: FALSE
+
+bibliography: references.bib
+---
+
+# Section A: Dateset metadata
+
+&nbsp; &nbsp; Name of Dataset: University enrolment
+
+&nbsp; &nbsp; Link of Dataset: https://data.ontario.ca/en/dataset/university-enrolment
+
+&nbsp; &nbsp; Source of Dataset: Data from the Ministry of Advanced Education and Skills Development's University Enrolment Statistical Reporting system
+
+# Section B: Visualizations
+
+&nbsp; &nbsp;
+
+&nbsp; &nbsp; R [@citeR] is used to create, and packages `tidyverse` [@cite_tidyverse], `scales` [@cite_scales], `here` [@cite_here], and formatted the document using packages `bookdown` [@cite_bookdown] and `kableExtra`[@cite_kableextra] .
+
+
+```{r, include=FALSE}
+# Create tibble based on university enrollment data
+university_data <- 
+  tibble(
+    enrollment_period = c("2012-2013","2012-2013","2012-2013","2012-2013","2013-2014","2013-2014","2013-2014","2013-2014","2014-2015", "2014-2015", "2014-2015","2014-2015","2015-2016","2015-2016","2015-2016","2015-2016","2016-2017","2016-2017","2016-2017","2016-2017", "2017-2018" ,"2017-2018", "2017-2018", "2017-2018", "2018-2019", "2018-2019", "2018-2019", "2018-2019")
+,
+type = c( "Undergraduate", "Undergraduate", "Graduate", "Graduate", "Undergraduate", "Undergraduate", "Graduate", "Graduate"    , "Undergraduate", "Undergraduate", "Graduate", "Graduate", "Undergraduate", "Undergraduate", "Graduate", "Graduate", "Undergraduate" ,"Undergraduate", "Graduate" ,     "Graduate" ,"Undergraduate", "Undergraduate", "Graduate", "Graduate"     
+,"Undergraduate", "Undergraduate", "Graduate" ,"Graduate" ),
+status = c("Domestic",  "International", "Domestic",  "International", "Domestic",  "International", "Domestic" ,     "International" ,"Domestic", "International", "Domestic", "International", "Domestic", "International", "Domestic", "International"
+,"Domestic", "International", "Domestic", "International", "Domestic", "International", "Domestic", "International","Domestic" ,     "International", "Domestic", "International")
+,
+headcount = c(50671,  8564, 11817,  2163, 51234,  9477, 12283,  2407, 50900, 11025, 12659,  2598, 51424, 12296, 13041,  2777, 50850, 13486, 13618,  2988, 50000, 14947, 13960,  3097, 49401, 16319, 14339,  3495)
+)
+```
+
